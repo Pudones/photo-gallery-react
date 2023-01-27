@@ -1,0 +1,168 @@
+@font-face {
+  font-family: dance;
+  src: url(../../attachments/fonts/DancingScript-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../../attachments/fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #03001C;
+  color: #eee;
+  font-family: OpenSans;
+}
+
+.header {
+  min-height: 8vh;
+}
+.header-container {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+@media (min-width: 481px) {
+  .header-container {
+    max-width: 720px;
+  }
+}
+.header-container .header-title {
+  font-family: dance;
+  font-size: 5rem;
+}
+.header-container .header-social {
+  display: flex;
+  gap: 15px;
+  font-size: 2.2rem;
+}
+.header-container .header-social-links {
+  color: gray;
+}
+.header-container .header-social a:hover {
+  color: white;
+}
+.header-container .header-social a i {
+  transition: 0.3s;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px;
+}
+@media (min-width: 481px) {
+  .section-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 481px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+.cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 481px) {
+  .cards .card {
+    width: 45%;
+    height: 300px;
+    margin: 0;
+  }
+}
+.cards .card-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.3s;
+}
+.cards .card-image {
+  filter: grayscale(100);
+  position: absolute;
+  z-index: -2;
+  transform: scale(1);
+  transition: transform 0.3s linear;
+}
+.cards .card-title {
+  font-family: dance;
+  font-size: 4.5rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.cards .card-button {
+  border: 1px solid white;
+  color: #eee;
+  padding: 5px 15px;
+  font-variant: small-caps;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: 0.5s;
+}
+.cards .card:hover .card-button {
+  background: #1e1340;
+}
+.cards .card:hover .card-image {
+  transform: scale(1.1);
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+.cards .card:hover .card-overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  padding: 10px;
+  height: 100%;
+  background-color: #1e1340;
+}
+.footer-text {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 700;
+}
+.footer-text-link {
+  color: white;
+  text-decoration: none;
+}
+.footer-text-link:hover {
+  transition: 0.3s;
+  color: rgb(226, 39, 226);
+}

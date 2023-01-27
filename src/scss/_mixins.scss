@@ -1,0 +1,33 @@
+@use 'variables';
+
+@mixin container-properties {
+  width: 100%;
+  max-width: variables.$container-s;
+  margin: 0 auto;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin for-mediumScreen {
+  @media (min-width: 481px) {
+    @content;
+  }
+}
+
+// @mixin bg-image($img) {
+//   background-image: url('../../attachments/images/#{$img}');
+//   background-size: 100%;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   filter: grayscale(100%);
+
+//   &:hover {
+//     background-size: 110%;
+//     filter: grayscale(0);
+//   }
+// }
+
