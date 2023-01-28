@@ -19,10 +19,6 @@ body {
   font-family: OpenSans;
 }
 
-// a {
-//   color: rgb(174, 171, 171);
-// }
-
 .header {
   min-height: 8vh;
 
@@ -34,6 +30,10 @@ body {
 
     @include mixins.for-mediumScreen {
       max-width: 720px;
+    }
+
+    @include mixins.for-largeScreen {
+      max-width: 1140px;
     }
 
     .header-title {
@@ -69,6 +69,9 @@ body {
   @include mixins.for-mediumScreen {
     max-width: 720px;
   }
+  @include mixins.for-largeScreen {
+    max-width: 1140px;
+  }
 }
 
 .cards {
@@ -77,24 +80,23 @@ body {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
   }
 
   .card {
     @include mixins.flex-center;
-    position: relative;
     flex-direction: column;
+    position: relative;
     border-radius: 10px;
     width: 300px;
     height: 300px;
+    // Margin Bottom pra compensar o gap do media query, visto que na versão mobile não é necessário o flex.
+    margin-bottom: 10px;
     transition: .3s;
-    margin-bottom: 20px;
-    cursor: pointer;
     overflow: hidden;
+    cursor: pointer;
 
     @include mixins.for-mediumScreen {
-      width: 45%;
-      height: 300px;
       margin: 0;
     }
 
