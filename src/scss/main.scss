@@ -94,7 +94,7 @@ body {
     margin-bottom: 10px;
     transition: .3s;
     overflow: hidden;
-    cursor: pointer;
+    padding: 15px;
 
     @include mixins.for-mediumScreen {
       margin: 0;
@@ -121,6 +121,7 @@ body {
       font-size: variables.$font-m;
       margin-bottom: 10px;
       font-weight: 300;
+      text-align: center;
     }
 
     &-button {
@@ -152,8 +153,11 @@ body {
 }
 
 .footer {
+  position: fixed;
+  width: 100%;
+  top: calc(100% - 70px);
   padding: 10px;
-  height: 100%;
+  min-height: 70px;
   background-color: variables.$cor1;
 
   &-text {
