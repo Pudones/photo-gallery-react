@@ -1,9 +1,0 @@
-.modal-overlay--loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-window--loading {
-  display: none;
-}
