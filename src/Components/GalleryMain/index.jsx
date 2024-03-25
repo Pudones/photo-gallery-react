@@ -1,0 +1,1 @@
+export { GalleryMain } from './GalleryMain'

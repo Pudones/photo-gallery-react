@@ -1,0 +1,1 @@
+export { GalleryWrapper } from './GalleryWrapper';

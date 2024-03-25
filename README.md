@@ -1,15 +1,8 @@
-# Photo Gallery 
+# React + Vite
 
-## About
-This is a simple website that simulate a gallery of some sorts, and has some preset categories of images that when the user selects one of them, it shows a random image of that category.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-You can access it [here](https://pudones.github.io/photo-gallery-react).
+Currently, two official plugins are available:
 
-## Project
-This project was built to study React, TailwindCSS, Vite, and Fetch API.
-
-## Credits
-- Design by the AWESOME [Moura](https://www.linkedin.com/in/thaisdemoura/)
-- Google Fonts
-- Unsplash API
-- React-Spinners
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

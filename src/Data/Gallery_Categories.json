@@ -1,0 +1,32 @@
+[
+  {
+    "category": "animals.jpg",
+    "categoryInternal": "animals",
+    "categoryAlt": "Photo of the Animal Category.",
+    "categorySrc": "./assets/category_backgrounds/animals.webp"
+  },
+  {
+    "category": "art.jpg",
+    "categoryInternal": "art",
+    "categoryAlt": "Photo of the Art Category.",
+    "categorySrc": "./assets/category_backgrounds/art.webp"
+  },
+  {
+    "category": "fashion.jpg",
+    "categoryInternal": "fashion",
+    "categoryAlt": "Photo of the Fashion Category.",
+    "categorySrc": "./assets/category_backgrounds/fashion.webp"
+  },
+  {
+    "category": "nature.jpg",
+    "categoryInternal": "nature",
+    "categoryAlt": "Photo of the Nature Category.",
+    "categorySrc": "./assets/category_backgrounds/nature.webp"
+  },
+  {
+    "category": "sports.jpg",
+    "categoryInternal": "sports",
+    "categoryAlt": "Photo of the Sports Category.",
+    "categorySrc": "./assets/category_backgrounds/sports.webp"
+  }
+]
